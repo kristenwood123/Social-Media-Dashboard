@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Social Media Theme Switcher</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,71 +14,143 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="body-dark-theme">
+  <!-- Main container -->
+  <div class="main-container">
+    <!-- Header -->
+    <div class="header">
+      <h1 class="header__heading">Social Media Dashboard</h1>
+        <p class="header__subheading">Total Followers: 23,004</h2>
+          
+      <!-- Header -->
+      <div class="header__toggle">
+        <p class="header__subheading">Dark Mode</p>
+        <button class="header__toggle-btn"></button>
+    </div> 
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- First four overall cards -->
+  <div class="totals">
+    <article class="total__card total__card-fb card-dark-theme">
+      <div class="total__card-icon">
+        <img src="images/icon-facebook.svg" alt="facebook icon">
+        <h2 class="total__card-name">@nathanf</h1>
+      </div>
+      <p class="total__card-number">1987</p>
+      <p class="total__card-followers">Followers</p>
+      <p class="total__card-growth">12 Today</p>
+    </article>
 
-  Dark Mode
+    <article class="total__card total__card-twitter card-dark-theme">
+      <div class="total__card-icon">
+        <img src="images/icon-twitter.svg" alt="twitter icon">
+        <h2 class="total__card-name">@nathanf</h1>
+      </div>
+      <p class="total__card-number">1044</p>
+      <p class="total__card-followers">Followers</p>
+      <p class="total__card-growth">99 Today</p>
+    </article>
 
-  
+    <article class="total__card total__card-insta card-dark-theme">
+      <div class="total__card-icon">
+        <img src="images/icon-instagram.svg" alt="instagram icon">
+        <h2 class="total__card-name">@nathanf</h1>
+      </div>
+      <p class="total__card-number">11k</p>
+      <p class="total__card-followers">Followers</p>
+      <p class="total__card-growth">1 Today</p>
+    </article>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <article class="total__card total__card-yt card-dark-theme">
+      <div class="total__card-icon">
+        <img src="images/icon-youtube.svg" alt="youtube icon">
+        <h2 class="total__card-name">@nathanf</h1>
+      </div>
+      <p class="total__card-number">8239</p>
+      <p class="total__card-followers">Subscribers</p>
+      <p class="total__card-growth-shrink">144 Today</p>
+    </article>
+  </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+    <!-- Overview heading -->
+    <section class="overview">
+      <h2 class="overview__heading">Overview - Today</h2>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <!-- Overview cards -->
+      <article class="overview__card overview__card-fb card-dark-theme">
+        <h4 class="overview__card-title">Page Views</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-facebook.svg" alt="facebook icon">
+        </div>
+        <p class="overview__card-number">87</p>
+        <p class="overview__card-growth">3%</p>
+      </article>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      <article class="overview__card overview__card-fb card-dark-theme">
+        <h4 class="overview__card-title">Likes</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-facebook.svg" alt="facebook icon">
+        </div>
+        <p class="overview__card-number">52</p>
+        <p class="overview__card-growth-shrink">2%</p>
+      </article>
 
+      <article class="overview__card overview__card-insta card-dark-theme">
+        <h4 class="overview__card-title">Likes</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+        </div>
+        <p class="overview__card-number">5462</p>
+        <p class="overview__card-growth">2257%</p>
+      </article>
 
+      <article class="overview__card overview__card-insta card-dark-theme">
+        <h4 class="overview__card-title">Profile Views</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+        </div>
+        <p class="overview__card-number">52k</p>
+        <p class="overview__card-growth">1375%</p>
+      </article>
 
-  Overview - Today
+      <article class="overview__card overview__card-twitter card-dark-theme">
+        <h4 class="overview__card-title">Retweets</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-twitter.svg" alt="twitter icon">
+        </div>
+        <p class="overview__card-number">117</p>
+        <p class="overview__card-growth">303%</p>
+      </article>
 
-  Page Views
-  87
-  3%
+      <article class="overview__card overview__card-twitter card-dark-theme">
+        <h4 class="overview__card-title">Likes</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-twitter.svg" alt=twitter icon">
+        </div>
+        <p class="overview__card-number">507</p>
+        <p class="overview__card-growth">553%</p>
+      </article>
 
-  Likes
-  52
-  2%
+      <article class="overview__card overview__card-yt card-dark-theme">
+        <h4 class="overview__card-title">Likes</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-youtube.svg" alt="youtube icon">
+        </div>
+        <p class="overview__card-number">107</p>
+        <p class="overview__card-growth-shrink">19%</p>
+      </article>
 
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-<script src="src/app.js"></script>
+      <article class="overview__card overview__card-yt card-dark-theme">
+        <h4 class="overview__card-title">Total Views</h4>
+        <div class="overview__card-icon">
+          <img src="images/icon-youtube.svg" alt="youtube icon">
+        </div>
+        <p class="overview__card-number">1407</p>
+        <p class="overview__card-growth-shrink">12%</p>
+      </article>
+    </section>
+    
+  </div>
 </body>
+  
+<script src="js/app.js"></script>
 </html>
